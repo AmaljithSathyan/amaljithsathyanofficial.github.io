@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a9d5b8fb84.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Rectangle 1.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <!--menu icon-->
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I'm <span>Amaljith</span> <br />From Kerala.</h1>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------About-------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/amal0007.png" class="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">
+              About<span style="color: #fa4747"> Me</span>
+            </h1>
+            <br />
+            <p>
+              I'm a fresher UI/UX designer. I have completed BTech in Computer
+              Engineering and also have Diploma in Computer Engineering. After
+              BTech, I undergone through UI/UX Designer course and currently
+              searching for a challenging job which will help to enhance my
+              knowledge and working ability.
+            </p>
+            <br />
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li>
+                  <span>Web Development</span><br />Web application development
+                </li>
+                <li>
+                  <span>App Development</span><br />Building Mobile applications
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Fresher candidate</span><br />Familiarized with figma,
+                  VSCode and Photoshop
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />UIUX Design Course at
+                  TechmindZ,Ernakulam
+                </li>
+                <li><span>2022</span><br />BTech in CSE from EKCTC,Manjeri</li>
+                <li><span>2017</span><br />Diploma in Computer Engineering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------- Services -------------------------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>designing user-friendly designs using figma,photoshop</p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              creating web applications design using figma and development using
+              HTML,CSS and Javascript
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Mobile app design in figma</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------Portfolio------------------------>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/shersoft heropage 1.jpg" />
+            <div class="layer">
+              <h3>Travel Web Application</h3>
+              <p>
+                The app connects you to the experienced and talented people
+                around the world. Download it from playstore
+              </p>
+              <a href="images/Shersoft web.png"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/Travel Website (3).png" />
+            <div class="layer">
+              <h3>Travel Web Application</h3>
+              <p>
+                The app connects you to the experienced and talented people
+                around the world. Download it from playstore
+              </p>
+              <a href="images/Travel Website.png"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/Food App-UI.png" />
+            <div class="layer">
+              <h3>Food Delivery Mobile App</h3>
+              <p>
+                The app helps people to find their favourite food items online.
+                Download app from playstore
+              </p>
+              <a
+                href="https://www.figma.com/file/6KswviW6GH1l9u6FE6fvZo/Food-App-UI?type=design&node-id=0%3A1&mode=design&t=QIR13AJrtYGKw6iA-1"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/figma design-portfolio (2).png" />
+            <div class="layer">
+              <h3>Portfolio design model</h3>
+              <p>
+                The application is a design model of simple portfolio for
+                showing the ability of a job seeker
+              </p>
+              <a href="images/figma design-portfolio.png"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/Kids.in Website (3).png" />
+            <div class="layer">
+              <h3>Kindergarten website design</h3>
+              <p>simple design for a kindergarten UI using figma</p>
+              <a href="images/Kids.in Website.png"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/Techmindz poster.png" />
+            <div class="layer">
+              <h3>poster 1</h3>
+              <p>simple poster design using an illustration</p>
+              <a href="images/Techmindz poster.pdf"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/Techmindz poster2.png" />
+            <div class="layer">
+              <h3>poster design 2</h3>
+              <p>poster on the basis of courses in Techmindz</p>
+              <a href="images/Techmindz poster2.pdf"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-------------------------Contact----------------------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>amaljithp07@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>730 627 5148</p>
+            <p><i class="fa-brands fa-whatsapp"></i>953 950 5973</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/amal.jith.520900"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/amaljith-p-3290a1127"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/amaljith_sathyan_ajs"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+            </div>
+            <a
+              href="images/Amaljith- CV-2023-UIUX.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright © Amaljith. Made with <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-Contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyHaf3MFSU1CeErTX44k7Tl-z6s4ahc0eCKcYsTTLgqwiJ7E06QAI6dpi0SLcVS64CP/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully.";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
